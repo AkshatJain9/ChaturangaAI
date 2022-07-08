@@ -11,6 +11,7 @@ class Window {
 	void clear();
 	void render();
     SDL_Texture* loadTexture(const char* p_filePath);
+    void updateBoard(uint8_t[8][8]);
 
 
     private:

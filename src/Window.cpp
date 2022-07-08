@@ -165,11 +165,18 @@ void Window::render()
                         SDL_RenderCopy(renderer, w_padati, NULL, &rect);
                         break;
                 }
-
-
-
+                
             }
 
+        }
+    }
+}
+
+// Updates board to render
+void Window::updateBoard(uint8_t[8][8] newBoard) {
+    for (int i = 0; i < 8; i++) {
+        for (int j = 0; j < 8; j++) {
+            currBoard[i][j] = newBoard[i][j];
         }
     }
 }
